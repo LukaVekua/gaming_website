@@ -1,0 +1,83 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Skins</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body style=background-color:#0c0a20> 
+
+
+<div class="container">
+
+
+    <div class="placing"> 
+
+        <img src="suratebi/logo.png"> 
+
+        <div class="pages"> <a href="index.html"> Main </a> </div>
+        <div class="pages"> <a href="gallery.html"> Gallery </a>  </div>
+        <div class="pages active"> Skins </div>
+     
+    </div>
+
+
+    <div class="skins">
+        
+        <div id="hide_show1"> 
+            <img src="suratebi/skeleton_knife.png"> 
+            <h3 id="skin_photo1"> 1000 $ </h3>
+        </div>
+
+        <div id="hide_show2"> 
+            <img src="suratebi/karambit.png">
+            <h3 id="skin_photo2">2000 $ </h3>
+        </div>
+
+        <div id="hide_show3"> 
+            <img src="suratebi/the_prince.png">
+            <h3 id="skin_photo3" >4000 $</h3>
+        </div>
+
+        <div id="hide_show4"> 
+            <img src="suratebi/gold_arabesque.png">
+            <h3 id="skin_photo4" >6000 $</h3>
+        </div>
+
+        <div id="hide_show5"> 
+            <img src="suratebi/icarus_fell.png">
+            <h3 id="skin_photo5" >8000 $</h3>
+        </div>
+
+        <div id="hide_show6"> 
+            <img src="suratebi/code_red.png">
+            <h3 id="skin_photo6" >20000 $</h3>
+        </div>
+    </div>
+
+
+    <div class="price_range">
+
+        <h2> Starting Price </h2>
+
+        <input class="bar" type="range" id="price_bar" 
+        min="0" max="10000" value="0"
+        oninput="rangeValue.innerText = this.value">
+
+        <p id="rangeValue" class="show_price"> 0 </p>
+
+    </div>
+
+
+
+</div>
+
+
+
+
+<script src="price.js"> </script>
+
+</body>
+</html>
